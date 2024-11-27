@@ -1,0 +1,183 @@
+/* Body Styles */
+body {
+          font-family: 'Poppins', sans-serif;
+          background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+          margin: 0;
+          padding: 0;
+          color: #333;
+      }
+      
+      /* Dashboard Header */
+      .dashboard {
+          text-align: center;
+          padding: 30px;
+      }
+      
+      header {
+          display: flex;
+          justify-content: center;  /* Centers the content horizontally */
+          align-items: center;      /* Centers the content vertically (if the header has a height) */
+          text-align: center;       /* Ensures the text inside the <h1> is centered */
+          margin-top: 20px;         /* Adds some space from the top of the page */
+      }
+      
+      h1 {
+          font-size: 2.8rem;
+          color: #2c3e50;
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      /* Card Styles */
+      .card-container {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          flex-wrap: wrap;
+      }
+      
+      .card {
+          background: #fff;
+          border-radius: 12px;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+          padding: 25px;
+          width: 280px;
+          text-align: center;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          cursor: pointer;
+      }
+      
+      .card:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+      }
+      
+      .card-icon {
+          font-size: 4rem;
+          color: #3498db;
+          margin-bottom: 15px;
+      }
+      
+      .card h2 {
+          font-size: 1.7rem;
+          margin-bottom: 15px;
+          color: #34495e;
+      }
+      
+      /* Button Styles */
+      .btn-card, .btn {
+          display: inline-flex;
+          align-items: center;
+          padding: 12px 20px;
+          background: #3498db;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 8px;
+          font-size: 1rem;
+          font-weight: bold;
+          transition: background 0.3s ease, transform 0.2s ease;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      .btn-card:hover, .btn:hover {
+          background: #2980b9;
+          transform: translateY(-2px);
+      }
+      
+      .btn-card i {
+          margin-right: 8px;
+      }
+      
+      /* Table Styles */
+      .styled-table {
+          width: 100%;
+          border-collapse: collapse;
+          margin: 20px 0;
+          font-size: 1rem;
+          box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+          border-radius: 12px;
+          overflow: hidden;
+          cursor: pointer;
+      }
+      
+      .styled-table thead tr {
+          background: #3498db;
+          color: #fff;
+          text-align: left;
+          font-weight: bold;
+      }
+      
+      .styled-table th, .styled-table td {
+          padding: 12px 20px;
+          border-bottom: 1px solid #ddd;
+      }
+      
+      .styled-table tbody tr:nth-child(even) {
+          background: #f4f4f4;
+      }
+      
+      .styled-table tbody tr:hover {
+          background: #ecf0f1;
+          transition: background 0.3s ease;
+      }
+      
+      /* Pagination */
+      .pagination {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          margin-top: 20px;
+      }
+      
+      .pagination button {
+          background: #3498db;
+          color: white;
+          border: none;
+          padding: 10px 15px;
+          border-radius: 8px;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: background 0.3s ease, transform 0.2s ease;
+      }
+      
+      .pagination button:hover {
+          background: #2980b9;
+          transform: translateY(-2px);
+      }
+      
+      .pagination button:disabled {
+          background: #bdc3c7;
+          cursor: not-allowed;
+      }
+      
+      /* Back to Dashboard Button */
+      .btn-dashboard {
+          display: inline-block;
+          margin: 20px auto;
+          padding: 10px 15px;
+          background: #e74c3c;
+          color: white;
+          font-weight: bold;
+          text-align: center;
+          text-decoration: none;
+          border-radius: 8px;
+          transition: background 0.3s ease, transform 0.2s ease;
+      }
+      
+      .btn-dashboard:hover {
+          background: #c0392b;
+          transform: translateY(-2px);
+      }
+      
+      /* Responsive Design */
+      @media (max-width: 768px) {
+          .card-container {
+              flex-direction: column;
+              align-items: center;
+          }
+      
+          .card {
+              width: 100%;
+          }
+      }
+      
